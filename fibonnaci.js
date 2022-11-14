@@ -2,7 +2,7 @@ const fibonnaci = (num) => {
   if (num === 0) return 0;
 
   const recc = (prev, curr, acc) => {
-    if (acc === num) return prev + curr;
+    if (acc === num) return curr;
 
     return recc(curr, prev + curr, acc + 1);
   }
